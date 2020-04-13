@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Slotest Slot</title>
+</head>
+<body>
+<h1>Welcome to the Slotest Slot Machine Prototype!</h1>
+<div id="phaser-holder"></div>
+<h2>Debug tools</h2>
+<div><input type="button" id="doFixedSpinButton" value="DO FIXED SPIN"/></div>
+<div>Icons available only: <span id="iconNames"></span><br/>
+    Positions available only: <span id="iconPositions"></span><br/>
+    <textarea rows="4" cols="70" id="debugCombination">[{"cherry":"center"},{"seven":"center"},{"cherry":"center"}]</textarea><br/>
+    <span id="errorMessage" style="color:red"></span>
+</div>
+<p>Modify user coins:<br/>
+    <input id="userCoinsInput" size="5" type="text" value="50"> <input type="submit" id="setUserCoinsButton" value="Set coins">
+</p>
+<script src="dist/index.js"></script>
+</body>
+</html>
