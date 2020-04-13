@@ -6,7 +6,7 @@ var slotConfig:any = {
         bar: "assets/BAR.png",
         bar2: "assets/2xBAR.png",
         seven: "assets/7.png",
-        cherry: "assets/cherry.png"
+        cherry: "assets/Cherry.png"
     },
     reelAmount: 3,
     iconsAmount: 3,
