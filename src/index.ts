@@ -10,6 +10,8 @@ var slotConfig:any = {
     },
     reelAmount: 3,
     iconsAmount: 3,
+    initialCoins: 1000,
+    spinBetCoins: 1,
     reelBgFile: "reelBg.png",
     machineBodyFile: "machineBody.png",
     spinButtonFile: "spinButton.png",

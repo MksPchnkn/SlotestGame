@@ -15,8 +15,8 @@ export class SlotMachine {
     private iconNames: Array<string> = [];
     private payTable: PayTable = null;
     private blinkIntervalId: integer = 0;
-    private userCoins: integer = 44;
-    private betCoins: integer = 1;
+    private userCoins: integer = 0;
+    private betCoins: integer = 0;
     private winDisplayText: Text = null;
     private coinsDisplayText: Text = null;
     private spinButton: Sprite = null;
@@ -28,6 +28,8 @@ export class SlotMachine {
 
     constructor(slotConfig: any, iconsPool: IconsPool, phaserScene: Scene) {
         this.iconsPool = iconsPool;
+        this.userCoins = slotConfig.initialCoins;
+        this.betCoins = slotConfig.spinBetCoins;
         this.reelsGroup = new ReelGroup(slotConfig, phaserScene, iconsPool, 38, 30, this.processSpinWin.bind(this));
         this.reelsAmount = slotConfig.reelAmount;
         this.iconsAmount = slotConfig.iconsAmount;

@@ -5,7 +5,8 @@
   "main": "src/index.ts",
   "scripts": {
     "build" : "webpack",
-    "start" : "webpack --watch | live-server --port=8085"
+    "start" : "webpack --watch | live-server --port=8085",
+    "prod" : "webpack --config webpack.prod.config.js"
   },
   "author": "Mks Pchnkn",
   "license": "ISC",
